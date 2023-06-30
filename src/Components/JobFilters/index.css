@@ -1,0 +1,50 @@
+.type-of-employment-container {
+  width: 100%;
+  border-top: 2px solid #64748b;
+  padding: 10px 4px 10px 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.type-of-employment-text {
+  margin-top: 6px;
+  margin-bottom: 10px;
+
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #ffffff;
+}
+
+.employment-category-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.employment-item-container {
+  margin-bottom: 8px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.employment-checkbox {
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+}
+
+.label-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: #ffffff;
+}

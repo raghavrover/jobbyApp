@@ -1,0 +1,113 @@
+.login-page-container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000000;
+}
+
+.login-form {
+  width: 95%;
+  max-width: 400px;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+
+  background-color: #272727;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.website-logo {
+  width: 45%;
+  max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  align-self: center;
+}
+
+.login-btn {
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+  border: none;
+  border-radius: 6px;
+
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #ffffff;
+  background-color: #4f46e5;
+}
+
+.password-field-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.password-label {
+  margin-bottom: 2px;
+
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+
+  color: #ffffff;
+}
+
+.password-field {
+  width: 100%;
+  height: 40px;
+  max-width: 100%;
+  padding: 10px;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  border: 1px solid #2c364c;
+  border-radius: 4px;
+  outline: none;
+
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #ffffff;
+  background-color: #202020;
+}
+
+.show-hide-password-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pwd-checkbox {
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+}
+
+.pwd-label-text {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+
+  color: #ffffff;
+}
+
+.error-msg {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+
+  color: #ff0b37;
+}
