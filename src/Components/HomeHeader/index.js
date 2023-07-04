@@ -44,10 +44,10 @@ const HomeHeader = props => {
         </div>
 
         <div className="nav-bar-items-container">
-          <Link to="/">
+          <Link to="/" className="link-item">
             <p className="nav-item">Home</p>
           </Link>
-          <Link to="/jobs">
+          <Link to="/jobs" className="link-item">
             <p className="nav-item">Jobs</p>
           </Link>
         </div>

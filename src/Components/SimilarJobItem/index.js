@@ -22,7 +22,7 @@ const SimilarJobItem = props => {
   }
 
   return (
-    <Link to={`/jobs/${id}`}>
+    <Link to={`/jobs/${id}`} className="link-item">
       <li className="similar-job-item" onClick={onSelectingJobCard}>
         <div className="company-details-container">
           <img
