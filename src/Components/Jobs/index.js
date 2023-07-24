@@ -99,7 +99,6 @@ class Jobs extends Component {
         jobsDataList: formattedJobsList,
       })
     } else {
-      console.log('api failed')
       this.setState({jobsDataApiStatus: apiStatus.failure})
     }
   }

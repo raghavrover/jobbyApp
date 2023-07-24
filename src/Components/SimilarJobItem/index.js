@@ -22,8 +22,8 @@ const SimilarJobItem = props => {
   }
 
   return (
-    <Link to={`/jobs/${id}`} className="link-item">
-      <li className="similar-job-item" onClick={onSelectingJobCard}>
+    <li className="similar-job-item" onClick={onSelectingJobCard}>
+      <Link to={`/jobs/${id}`} className="link-item">
         <div className="company-details-container">
           <img
             src={companyLogoUrl}
@@ -38,10 +38,8 @@ const SimilarJobItem = props => {
             </div>
           </div>
         </div>
-
         <h1 className="similar-job-description-title">Description</h1>
         <p className="similar-job-description">{jobDescription}</p>
-
         <div className="similar-job-location-job-type-container">
           <div className="similar-job-location-container">
             <MdLocationOn className="location-icon" />
@@ -51,9 +49,9 @@ const SimilarJobItem = props => {
             <BsFillBriefcaseFill className="location-icon" />
             <p className="location-text">{employmentType}</p>
           </div>
-        </div>
-      </li>
-    </Link>
+        </div>{' '}
+      </Link>
+    </li>
   )
 }
 

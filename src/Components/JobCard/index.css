@@ -1,13 +1,23 @@
 .job-item {
   list-style-type: none;
 
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 10px;
+  width: 96%;
+  margin-bottom: 20px;
   border: none;
   border-radius: 10px;
 
   background-color: #272727;
+}
+
+.job-item:hover {
+  box-shadow: 2px 2px 14px #bfbfbf;
+}
+
+.link-item {
+  width: 100%;
+  padding: 20px;
+
+  text-decoration: none;
 
   display: flex;
   flex-direction: column;
