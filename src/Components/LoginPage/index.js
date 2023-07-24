@@ -78,9 +78,7 @@ class LoginPage extends Component {
 
   renderPasswordField = () => {
     const {password, showPassword} = this.state
-    const showPwdObject = showPassword
-      ? {inputType: 'text', labelText: 'Hide Password'}
-      : {inputType: 'password', labelText: 'Show Password'}
+    const inputPwdType = showPassword ? 'text' : 'password'
 
     return (
       <div className="password-field-container">
@@ -88,7 +86,7 @@ class LoginPage extends Component {
           PASSWORD
         </label>
         <input
-          type={showPwdObject.inputType}
+          type={inputPwdType}
           id="password"
           className="password-field"
           placeholder="Password"
@@ -103,7 +101,7 @@ class LoginPage extends Component {
             onChange={this.onCheckboxChange}
           />
           <label htmlFor="showHidePwd" className="pwd-label-text">
-            {showPwdObject.labelText}
+            Show Password
           </label>
         </div>
       </div>
