@@ -50,6 +50,12 @@ In this project, I built a **Jobby App** using React, React Router DOM and a few
 - Implemented a failure view to handle HTTP request failure.
 </details>
 
+<details>
+<summary>Not Found</summary>
+
+- Page not found view is displayed, when the user enters an unspecified path(URL)  
+</details>
+
 ### User credentials
 
 ```text
