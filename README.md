@@ -1,6 +1,6 @@
 In this project, I built a **Jobby App** using React, React Router DOM and a few third party npm packages.
 
-### Refer to videos below:
+### Refer to video below:
 
 <div style="text-align: center;">
   <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
