@@ -1,6 +1,6 @@
 In this project, I built a **Jobby App** using React, React Router DOM and a few third party npm packages.
 
-### Refer to videos below:
+### Refer to video below:
 
 <div style="text-align: center;">
   <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
@@ -48,6 +48,12 @@ In this project, I built a **Jobby App** using React, React Router DOM and a few
 - Job data is fetched by making a HTTP GET request to **JobDetailsApiUrl** using browsers Web API **fetch** function.
 - Response data is parsed and rendered.
 - Implemented a failure view to handle HTTP request failure.
+</details>
+
+<details>
+<summary>Not Found</summary>
+
+- Page not found view is displayed, when the user enters an unspecified path(URL)  
 </details>
 
 ### User credentials
