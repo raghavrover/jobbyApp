@@ -19,16 +19,16 @@ class JobItemDetails extends Component {
   state = {jobDetails: {}, jobItemAPIStatus: apiStatus.initial}
 
   componentDidMount() {
-    this.setState(
-      {
-        jobItemAPIStatus: apiStatus.fetching,
-      },
-      this.getJobItemData,
-    )
+    this.getJobItemData()
+    window.addEventListener('popstate', this.handleNavigation)
   }
 
   componentWillUnmount() {
-    console.log('job-item-component-unmounted')
+    window.removeEventListener('popstate', this.handleNavigation)
+  }
+
+  handleNavigation = () => {
+    this.getJobItemData()
   }
 
   getFormattedJobData = jobDetails => ({
@@ -64,6 +64,9 @@ class JobItemDetails extends Component {
 
   // API call method
   getJobItemData = async () => {
+    this.setState({
+      jobItemAPIStatus: apiStatus.fetching,
+    })
     const jwtToken = Cookies.get('jwt_token')
     const {match} = this.props
     const {params} = match
