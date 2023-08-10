@@ -50,11 +50,10 @@ const HomeHeader = props => {
           <Link to="/jobs" className="link-item">
             <p className="nav-item">Jobs</p>
           </Link>
+          <button className="logout-btn" type="button" onClick={onLogout}>
+            Logout
+          </button>
         </div>
-
-        <button className="logout-btn" type="button" onClick={onLogout}>
-          Logout
-        </button>
       </div>
     </nav>
   )

@@ -5,8 +5,8 @@ import './index.css'
 
 class LoginPage extends Component {
   state = {
-    username: '',
-    password: '',
+    username: 'rahul',
+    password: 'rahul@2021',
     isLoginSuccessful: true,
     errorMsg: '',
     showPassword: false,
@@ -123,7 +123,9 @@ class LoginPage extends Component {
         <button type="submit" className="login-btn">
           Login
         </button>
-
+        <p className="password-label">
+          Login and explore with the pre-filled credentials
+        </p>
         {!isLoginSuccessful ? (
           <p className="error-msg">{`*${errorMsg}`}</p>
         ) : null}
